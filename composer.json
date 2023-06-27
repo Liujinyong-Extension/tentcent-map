@@ -1,0 +1,17 @@
+{
+    "name": "liujinyong\/tencent-map",
+    "description": "基于腾讯地图开发的包",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "brahma",
+            "email": "893296814@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Liujinyong\\TencentMap\\": "src"
+        }
+    }
+}
