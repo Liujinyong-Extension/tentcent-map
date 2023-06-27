@@ -8,7 +8,9 @@
             "email": "893296814@qq.com"
         }
     ],
-    "require": {},
+    "require": {
+        "guzzlehttp/guzzle": "^7.7"
+    },
     "autoload": {
         "psr-4": {
             "Liujinyong\\TencentMap\\": "src"

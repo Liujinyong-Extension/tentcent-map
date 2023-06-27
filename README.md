@@ -3,15 +3,25 @@
 <p align="center"> 基于腾讯地图开发的包.</p>
 
 
-## Installing
+## 安装
 
 ```shell
-$ composer require liujinyong/tencent-map -vvv
+$ composer require liujinyong/tencent-map 
 ```
 
-## Usage
+## 使用
 
-TODO
+```php
+
+require __DIR__ . '/vendor/autoload.php';
+
+$main = new \Liujinyong\TencentMap\Main("腾讯地图的key");
+
+//地址换经纬度
+$res = $main->address2latlon("需要转换的地址")
+
+```
+
 
 ## Contributing
 
