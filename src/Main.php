@@ -54,5 +54,12 @@ class Main
         $url = "https://apis.map.qq.com/ws/geocoder/v1/?address=" . $address . "&key=" . $this->key;
         return $this->get($url);
     }
+    public function latlon2address($lat,$lon){
+        if ($lat == "" || $lon == "") {
+            return $this->error(0,"参数不能为空");
+        }
+        $url = "https://apis.map.qq.com/ws/geocoder/v1/?location=".$lat.",".$lon . "&key=" . $this->key;
+        return $this->get($url);
+    }
 
 }
